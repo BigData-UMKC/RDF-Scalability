@@ -8,6 +8,8 @@ import org.apache.spark.{SparkConf, SparkContext}
 object SparkRDF {
 
   def main(args: Array[String]) {
+    //For windows environment
+    System.setProperty("hadoop.home.dir", "F:\\winutils")
 
     var conf =new SparkConf().setAppName("RDF Syntax Processing").setMaster("local")
 
