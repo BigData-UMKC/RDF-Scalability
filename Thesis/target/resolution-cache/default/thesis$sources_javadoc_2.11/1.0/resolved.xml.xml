@@ -4,7 +4,7 @@
 		module="thesis$sources_javadoc_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20151104110959"
+		publication="20151106093222"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
@@ -275,7 +275,7 @@
 			<artifact name="commons-math3" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="commons-math3" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
-		<dependency org="org.slf4j" name="slf4j-api" rev="1.7.10" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+		<dependency org="org.slf4j" name="slf4j-api" rev="1.7.10" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);provided->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="slf4j-api" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="slf4j-api" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
@@ -611,10 +611,6 @@
 		<dependency org="org.scala-lang.modules" name="scala-parser-combinators_2.11" rev="1.0.1" transitive="false" conf="provided->default(compile)">
 			<artifact name="scala-parser-combinators_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="scala-parser-combinators_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
-		</dependency>
-		<dependency org="org.slf4j" name="slf4j-api" rev="1.7.7" transitive="false" conf="provided->default(compile)">
-			<artifact name="slf4j-api" type="src" ext="jar" conf="sources" e:classifier="sources"/>
-			<artifact name="slf4j-api" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
 		<dependency org="org.scala-lang" name="scala-reflect" rev="2.11.2" transitive="false" conf="provided->default(compile)" info.apiURL="http://www.scala-lang.org/api/2.11.2/">
 			<artifact name="scala-reflect" type="src" ext="jar" conf="sources" e:classifier="sources"/>

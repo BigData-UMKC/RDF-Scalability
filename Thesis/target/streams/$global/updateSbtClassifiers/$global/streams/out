@@ -652,8 +652,8 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#sbt;0.13.8!sbt.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.10.4!scala-library.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#main;0.13.8!main.jar
-[debug] 	[NOT REQUIRED] org.scala-sbt#compiler-interface;0.13.8!compiler-interface-bin.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#compiler-interface;0.13.8!compiler-interface-src.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#compiler-interface;0.13.8!compiler-interface-bin.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_8_2;0.13.8!compiler-interface-bin.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_9_2;0.13.8!compiler-interface-bin.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_9_3;0.13.8!compiler-interface-bin.jar
@@ -703,9 +703,9 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-agent;0.13.8!test-agent.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.8!apply-macro.jar
-[debug] :: resolution report :: resolve 2851ms :: artifacts dl 43ms
-[debug] 	report for default#thesis$sbt_2.11;1.0 default produced in /Users/Venu/Documents/Thesis/target/resolution-cache/reports/default-thesis$sbt_2.11-default.xml
-[debug] 	resolve done (2851ms resolve - 43ms download)
+[debug] :: resolution report :: resolve 484ms :: artifacts dl 46ms
+[debug] 	report for default#thesis$sbt_2.11;1.0 default produced in C:\Users\hastimal\Documents\GitHub\RDF-Scalability\Thesis\target\resolution-cache\reports\default-thesis$sbt_2.11-default.xml
+[debug] 	resolve done (484ms resolve - 46ms download)
 [debug] Using inline dependencies specified in Scala.
 [debug] :: resolving dependencies :: default#thesis$sources_2.11;1.0
 [debug] 	confs: [default]
@@ -1069,6 +1069,6 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_8_2;0.13.8!precompiled-2_8_2.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_9_2;0.13.8!precompiled-2_9_2.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_9_3;0.13.8!precompiled-2_9_3.jar(src)
-[debug] :: resolution report :: resolve 335ms :: artifacts dl 51ms
-[debug] 	report for default#thesis$sources_2.11;1.0 default produced in /Users/Venu/Documents/Thesis/target/resolution-cache/reports/default-thesis$sources_2.11-default.xml
-[debug] 	resolve done (335ms resolve - 51ms download)
+[debug] :: resolution report :: resolve 321ms :: artifacts dl 76ms
+[debug] 	report for default#thesis$sources_2.11;1.0 default produced in C:\Users\hastimal\Documents\GitHub\RDF-Scalability\Thesis\target\resolution-cache\reports\default-thesis$sources_2.11-default.xml
+[debug] 	resolve done (321ms resolve - 76ms download)

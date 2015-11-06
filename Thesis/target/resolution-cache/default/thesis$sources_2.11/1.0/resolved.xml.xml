@@ -4,7 +4,7 @@
 		module="thesis$sources_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20151104110957"
+		publication="20151106093220"
 	/>
 	<configurations>
 		<conf name="default" visibility="public" description=""/>
