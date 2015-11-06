@@ -1,4 +1,4 @@
-package com.umkc
+package com.umkc.algorithm1
 
 /**
  * Created by Venu on 10/26/15.
