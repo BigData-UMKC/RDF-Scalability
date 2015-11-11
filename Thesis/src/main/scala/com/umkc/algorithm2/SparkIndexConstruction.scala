@@ -50,14 +50,18 @@ object SparkIndexConstruction {
     val propGraph = Graph(users, relationships)
     System.out.println("##########Printing raw graph##########")
     propGraph.triplets.foreach(println(_))
+    //Step-1
     System.out.println("##########Printing raw graph with connected components##########")
     val cc=propGraph.connectedComponents()
+    //cc.triplets.foreach(println(_))
     cc.triplets.foreach(println(_))
-//    System.out.println("##########Printing raw graph with connected components verices##########")
-//    val ccV=propGraph.connectedComponents().vertices
-//    ccV.foreach(println(_))
+        System.out.println("##########Printing raw graph with connected components verices##########")
+        val ccV=propGraph.connectedComponents().vertices
+        ccV.foreach(println(_))
 
 
+    //Step-2 Join with original graph
+    //var triplets= propGraph.joinVertices(cc).triplets
 
 
 
