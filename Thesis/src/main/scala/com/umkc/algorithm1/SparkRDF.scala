@@ -16,7 +16,7 @@ object SparkRDF {
     var sc = new SparkContext(conf)
 
     //Step-1
-    var inputFile = sc.textFile("src/main/resources/rdf.nt")
+    var inputFile = sc.textFile("src/main/resources/inputData/rdf.nt")
 
     //Step-2
     var rdfTuples = inputFile.map(line => line)

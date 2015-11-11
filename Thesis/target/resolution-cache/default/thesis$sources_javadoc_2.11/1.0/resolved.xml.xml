@@ -4,7 +4,7 @@
 		module="thesis$sources_javadoc_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20151106093222"
+		publication="20151111105109"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
