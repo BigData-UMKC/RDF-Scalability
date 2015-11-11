@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42c78fcb-635a-4061-ab3c-2bce6dbdfa26" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/com/umkc/algorithm2/SparkIndexConstruction.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/umkc/algorithm2/SparkIndexConstruction.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/PropertyGraph.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RdfToProperty And PropertyToRDF/GraphX" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/inputData/samplecongress.nt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Spark RDF Data.iws" />
@@ -914,7 +916,7 @@
       <workItem from="1446661204814" duration="1410000" />
       <workItem from="1446823819389" duration="5344000" />
       <workItem from="1447011134689" duration="30618000" />
-      <workItem from="1447260588353" duration="9568000" />
+      <workItem from="1447260588353" duration="10026000" />
     </task>
     <task id="LOCAL-00001" summary="Added winutils and did sync">
       <created>1446661711036</created>
@@ -940,11 +942,17 @@
       <option name="project" value="LOCAL" />
       <updated>1447265336356</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added Algorithm2 with property graph">
+      <created>1447273022398</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1447273022398</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46940000" />
+    <option name="totallyTimeSpent" value="47398000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
