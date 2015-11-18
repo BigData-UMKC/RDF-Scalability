@@ -13,6 +13,7 @@ object SparkIndexConstruction {
 
     Logger.getLogger("org").setLevel(Level.OFF)
     Logger.getLogger("akka").setLevel(Level.OFF)
+    Logger.getLogger("log4j").setLevel(Level.OFF)
     //For windows environment
     System.setProperty("hadoop.home.dir", "F:\\winutils")
 
@@ -30,10 +31,7 @@ object SparkIndexConstruction {
         (4L, ("peter", "student")),
         (0L, ("John Doe", "Missing")))).cache()
     // Create an RDD for edges
-    System.out.println("##########Vertex RDD as users##########")
-    users.collect.foreach(println)
-
-    val relationships: RDD[Edge[String]] =
+   val relationships: RDD[Edge[String]] =
       sc.parallelize(Array(
         Edge(3L, 7L, "collab"),
         Edge(5L, 3L, "advisor"),
@@ -41,29 +39,41 @@ object SparkIndexConstruction {
         Edge(5L, 7L, "pi"),
         Edge(4L, 0L, "student"))).cache()
     // Edge(5L, 0L, "colleague"))).cache()  //Removed edge between 5 and 0 node to get two different connected graphs
-    System.out.println("##########Edge RDD as users##########")
-    relationships.collect.foreach(println)
+
+
 
     // Define a default user in case there are relationship with missing user
     //val defaultUser = ("John Doe", "Missing")
     // Build the initial Graph
     val propGraph = Graph(users, relationships)
+
+     System.out.println("##########Edge RDD as users##########")
+   // relationships.collect.foreach(println)
+      propGraph.edges.foreach(println(_))
+    System.out.println("##########Vertex RDD as users##########")
+    //users.collect.foreach(println)
+    propGraph.vertices.foreach(println(_))
     System.out.println("##########Printing raw graph##########")
     propGraph.triplets.foreach(println(_))
     //Step-1
     System.out.println("##########Printing raw graph with connected components##########")
-    val cc=propGraph.connectedComponents()
+    val ccGraph=propGraph.connectedComponents()
     //cc.triplets.foreach(println(_))
-    cc.triplets.foreach(println(_))
-        System.out.println("##########Printing raw graph with connected components verices##########")
-        val ccV=propGraph.connectedComponents().vertices
-        ccV.foreach(println(_))
-
+    ccGraph.triplets.foreach(println(_))
+//    ccGraph.vertices.foreach(println)
+//    ccGraph.edges.foreach(println)
+//    System.out.println("##########Printing raw graph with connected components verices##########")
+//    val ccV=propGraph.connectedComponents().vertices
+//    ccV.foreach(println(_))
 
     //Step-2 Join with original graph
-    //var triplets= propGraph.joinVertices(cc).triplets
-
-
-
+    //var triplets= propGraph.joinVertices(ccGraph).triplets  //Not required
+//    def genRDFTriples(iter:Iterator[(String,Int)]):Iterator[(VertexId,String)]={
+//      var result = List[(VertexId,String)]()
+//      while (iter.hasNext){
+//        result = result .:: ((iter.next()._2.toLong,iter.next()._1))
+//      }
+//      result.iterator
+//    }
   }
 }
